@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordinateurs Portables Gratuits pour Étudiants</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ordinateurs Portables Gratuits pour Étudiants</h1>
+        <form action="submit.php" method="post" id="requestForm">
+            <label for="name">Nom Complet :</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="education">Niveau d'Études :</label>
+            <input type="text" id="education" name="education" required><br><br>
+
+            <label for="brand">Marque Préférée d'Ordinateur Portable :</label>
+            <input type="text" id="brand" name="brand" required><br><br>
+
+            <label for="age">Âge :</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="countryCode">Indicatif du Pays :</label>
+            <select id="countryCode" name="countryCode">
+                <option value="+1">+1 (USA)</option>
+                <option value="+44">+44 (UK)</option>
+                <option value="+33">+33 (France)</option>
+                <!-- Ajoutez d'autres options selon vos besoins -->
+            </select><br><br>
+
+            <label for="verification">Quelle est la réponse à 2 + 2 ?</label>
+            <input type="text" id="verification" name="verification" required><br><br>
+
+            <input type="submit" value="Soumettre">
+        </form>
+
+        <!-- Exemple de message de succès -->
+        <div class="success-message" style="display: none;">
+            <p>Merci pour votre soumission ! Votre demande a été reçue.</p>
+        </div>
+
+        <!-- Exemple de message d'erreur -->
+        <div class="error-message" style="display: none;">
+            <p>La réponse à la question de vérification est incorrecte. Veuillez réessayer.</p>
+        </div>
+
+        <!-- Ajoutez d'autres sections comme à votre convenance -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
